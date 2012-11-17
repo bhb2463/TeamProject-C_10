@@ -39,3 +39,6 @@ input,button,textarea,select{*font-size:100%;}
 
 #header_log{background-color: #E8D9FF; margin-left: 10px; margin-right: 10px;}
 #body_left{float: left; width: 100px; height: 1000px; background-color: #A6A6A6;}
+
+#home_top{text-align: center; height: 300px}
+#home_bottom{height: 700px;}

@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Main Page</title>
 	<link href="./stylesheet/main.css" rel="stylesheet" type="text/css">
-	<link href="./stylesheet/search.css" rel="stylesheet" type="text/css">
+	<link href="./stylesheet/register.css" rel="stylesheet" type="text/css">
 	<link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 </head>
 <body>
@@ -33,14 +33,37 @@
 	<div id="body_left">
 		top button
     </div>
-	<div id="search">
-		<div id="search_top_search">
+	<div id="register">
+		<form action="/update.php" method="post">
+			<input type="hidden" name="type" value="user"/>
+			<table border="1">
+			<tr>
+			    <th>E-Mail:</th>
+			    <td>
+			    <input class="input-xlarge" type="text" 
+			    placeholder="abcde@fgh.ijk">
+			    <input type="button" value="중복조회"/></td>
+			</tr>
+			<tr>
+				<th>비밀번호:</th> 
+				<td><input type="passward" name="pwd" size="10"/></td>
+			</tr>
+			<tr>
+				<th>성별:</th>
+			    <td>
+				<input type="radio" name="sex" value="m">남
+			    <input type="radio" name="sex" value="f">여
+			    </td>
+			</tr>
+			<tr>
+			<th>주소:</th>
+			<td>
 			<select class="span2" name="city" size = "1">
 				<option value="Seoul">서울시</option>
 				<option value="kyung-ki">경기도</option>
 				<option value="chong-chung">충청도</option>
 				<option value="kyung-sang">경상도</option>
-			</select><br/>
+			</select>
 			<select class="span2" name="gu" size="1">
 				<option value="gang-nam">강남구</option>
 				<option value="gang-dong">강동구</option>
@@ -67,19 +90,23 @@
 				<option value="yang-chun">양천구</option>
 				<option value="gwan-ak">관악구</option>
 				<option value="dong-jak">동작구</option>
-			</select><br/>
-			<button type="submit" class="btn btn-primary">검색하기</button>	    
-		</div>
-	    <hr/>
-		<div id="search_bottom">
-			<a href="http://www.naver.com">박준헤어(서울시/강남구/리ㅏㅜㅇ내ㅓㄹ니ㅏ)</a>
-			 <button class="btn btn-small btn-primary" type="button">
-			 	예약하기</button>
-             <button class="btn btn-small" type="button">
-             	미리담기</button>
+			</select></td>
+		</tr>
+		<tr>
+			<th>상세주소</th>
+			<td>
+				<input class="input-xxlarge" type="text" 
+			name="location" size="30">
+		    </td>
+		</tr>
+		<tr>
+			<th colspan="2">자기소개:<br/>
+			<textarea cols="30" rows="5" name="intro"></textarea><br/>
+			<input type="submit" value="회원가입"/>
+		    </th>
+		</tr>
+	</table>
+		</form>
 
-		</div>
-	</div>
-	</div>
 </body>
 </html>
