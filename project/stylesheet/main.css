@@ -19,11 +19,12 @@ input,button,textarea,select{*font-size:100%;}
 #header { width : 830px ; margin: 0 auto; background-color: #fff; overflow: auto; padding: 0 0 0 390px; }
 
 
-#navbar {margin-right: 10px; margin-left: 10px; left: 30%; overflow: auto; width: auto; height:50px;background-color:#3515B0;}
+#navbar {margin-right: 10px; margin-left: 10px; left: 30%; overflow: auto; width: auto;
+ height:50px;background-color:#0A64A4;}
 
 #navbar ul li {float:left;}
 #navbar ul li a{
-	color:#fff; background-color:#1D0772;
+	color:#fff; background-color:#0A64A4;
 	display:block;
 	width:150px;
 	text-align:center;
@@ -32,10 +33,17 @@ input,button,textarea,select{*font-size:100%;}
 	text-decoration:none;
 	margin-right:1px;
 }
-#navbar ul li a.selected {background-color:#268E00;}
+#navbar ul li a.selected {background-color:#03406A;}
 #navbar ul li a:hover {
-	background-color:#4AA329;}
+	background-color:#65A5D1;}
 
 
-#header_log{background-color: #E8D9FF; margin-left: 10px; margin-right: 10px;}
-#body_left{float: left; width: 100px; height: 1000px; background-color: #A6A6A6;}
+#header_log{background-color: #3E94D1; margin-top:2px; margin-left: 10px; margin-right: 10px;}
+#body_left{float: left; width: 100px; height: 1000px; background-color: #3E94D1;}
+
+
+
+#main_login {
+	margin-top : 8px;
+	
+}
