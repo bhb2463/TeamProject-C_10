@@ -17,7 +17,7 @@
 		 <div class="well">
 		  <ul>
 		   <li>E-mail : <%=request.getParameter("email")%></li>
-		    <li>비밀번호 : <%=request.getParameter("pwd")%></li>
+		    <li>비밀번호 : <%=request.getParameter("pw")%></li>
 		    <li>주소 : <%=request.getParameter("city")%>
 		             <%=request.getParameter("gu")%></li>
 		    <li>상세주소: <%=request.getParameter("location")%></li>
@@ -70,7 +70,7 @@
 						 <option value="jung-rang">중랑구</option>
 						 <option value="dong-dae-moon">동대문구</option>
 						 <option value="jong-ro">종로구</option>
-						 <option value="jung">중구</option>''
+						 <option value="jung">중구</option>
 						 <option value="sung-dong">성동구</option>
 						 <option value="gwang-jin">광진구</option>
 						 <option value="yong-san">용산구</option>

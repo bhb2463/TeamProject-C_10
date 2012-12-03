@@ -54,7 +54,7 @@
 						 <option value="jung-rang">중랑구</option>
 						 <option value="dong-dae-moon">동대문구</option>
 						 <option value="jong-ro">종로구</option>
-						 <option value="jung">중구</option>''
+						 <option value="jung">중구</option>
 						 <option value="sung-dong">성동구</option>
 						 <option value="gwang-jin">광진구</option>
 						 <option value="yong-san">용산구</option>
