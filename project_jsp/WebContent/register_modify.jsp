@@ -17,7 +17,6 @@
 		 <div class="well">
 		  <ul>
 		    <li>E-mail : <%=request.getParameter("email")%></li>
-		    <li>비밀번호 : <%=request.getParameter("pw")%></li>
 		    <li>이름 : <%=request.getParameter("name")%></li>
 		    <li>전화번호 : <%=request.getParameter("phone")%></li>
 		    <li>성별 : <%=request.getParameter("gender")%></li>
@@ -30,50 +29,43 @@
   <%} else { %>
     <div>
 		 
-		  <form class="form-horizontal" method="post" action="users.jsp">
+		  <form class="form-horizontal" method="post">
 			<fieldset>
 				<div id="legend">
-					<legend>회원가입</legend>
+					<legend>수정하기</legend>
 				</div>
 								
 				<div class="control-group">
 					<label class="control-label" for="email">E-mail</label>
 					<div class="controls">
-						<input type="email" placeholder="hong@abc.com" name="email">
+						<input type="email" placeholder="hong@abc.com" name="email" value="<%email%>">
 					</div>
 				</div>
-				
-				<div class="control-group">
-					<label class="control-label" for="pw">Password</label>
-					<div class="controls">
-						<input type="password" name="pw">
-					</div>
-				</div>
-				
+												
 					<div class="control-group">
 					<label class="control-label" for="name">name</label>
 					<div class="controls">
-						<input type="text" name="name">
+						<input type="text" name="name" value="<%name%>">
 					</div>
 				</div>				
 				
 				<div class="control-group">
 					<label class="control-label" for="phone">phone-number</label>
 					<div class="controls">
-						<input type="text" name="phone">
+						<input type="text" name="phone" value="<%phone%>">
 					</div>
 				</div>				
 
 				<div class="control-group">
 					<label class="control-label">city</label>
 					<div class="controls">
-						<select name="adress_city">
+						<select name="adress_city" value="<%adress_city%>">
 							<option value="Seoul">서울시</option>
 				      <option value="kyung-ki">경기도</option>
 				      <option value="chong-chung">충청도</option>
 				      <option value="kyung-sang">경상도</option>
 						</select>
-						<select name="adress_gu">
+						<select name="adress_gu" value="<%adress_gu%>">
 						 <option value="gang-nam">강남구</option>
 						 <option value="gang-dong">강동구</option>
 						 <option value="gang-buk">강북구</option>
@@ -107,8 +99,7 @@
 					<label class="control-label">상세주소</label>
 					<div class="controls">
 						<div class="textarea">
-							<input class="input-xxlarge" type="text" 
-			 name="adress_detail" size="30">
+							<input class="input-xxlarge" type="text" name="adress_detail" value="<%adress_detail%>" size="30">
 						</div>
 					</div>
 				</div>
@@ -138,4 +129,3 @@
  
 </body>
 </html>
-

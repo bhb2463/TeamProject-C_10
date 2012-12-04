@@ -42,5 +42,6 @@
 	  Email: <input type="text" name="email">
 	  Password: <input type="password" name="pwd">
 	  <input type="submit" value="로그인">
+	  <a href="register.jsp">회원가입</a>
   </form>
 </div>
