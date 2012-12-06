@@ -4,7 +4,7 @@
 
 <%
 request.setCharacterEncoding("utf-8");
-String dbUrl = "jdbc:mysql://localhost:3306/     ?characterEncoding=utf8";
+String dbUrl = "jdbc:mysql://localhost:3306/project?characterEncoding=utf8";
 String dbUser = "root";
 String dbPassward ="qoaqja";
 

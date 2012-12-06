@@ -98,6 +98,13 @@
 						</div>
 					</div>
 				</div>
+				<div class="control-group">
+				<label class="control-label">매장소개</label>
+				<div class="textarea">
+				   <textarea cols="40" rows="9" name="comment"></textarea>
+				</div>
+				
+				</div>
 											
 				<div class="form-actions">
 				
