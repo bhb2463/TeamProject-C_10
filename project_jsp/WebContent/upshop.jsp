@@ -16,14 +16,13 @@
 	<%	if (request.getMethod() == "POST") { %>
 		 <div class="well">
 		  <ul>
-		    <li>E-mail : <%=request.getParameter("email")%></li>
+		    <li>상호명 : <%=request.getParameter("id")%></li>
 		    <li>비밀번호 : <%=request.getParameter("pw")%></li>
-		    <li>이름 : <%=request.getParameter("name")%></li>
-		    <li>전화번호 : <%=request.getParameter("phone")%></li>
-		    <li>성별 : <%=request.getParameter("gender")%></li>
+		    <li>전화번호 : <%=request.getParameter("name")%></li>
 		    <li>주소 : <%=request.getParameter("adress_city")%>
 		             <%=request.getParameter("adress_gu")%></li>
 		    <li>상세주소: <%=request.getParameter("adress_detail")%></li>
+		    <li>매장소개: <%request.getParameter("comment")%></li>
 		    
 	    </ul>
 		 </div>

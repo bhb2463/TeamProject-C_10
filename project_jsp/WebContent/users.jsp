@@ -28,7 +28,7 @@ try{
 	
 	conn = DriverManager.getConnection(dbUrl,dbUser,dbPassward);
 	stmt = conn.prepareStatement("Insert into users(email, pw, name,phone,adress_city,adress_gu,adress_detail, gender)"
-	+ "values(?,?,?,?,?,?,?,?,?)");
+	+ "values(?,?,?,?,?,?,?,?)");
 	stmt.setString(1,email);
 	stmt.setString(2,pw);
 	stmt.setString(3,name);
